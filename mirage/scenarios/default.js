@@ -1,5 +1,9 @@
 export default function(server) {
   server.loadFixtures('calendars');
+  server.createList('calendar', 5);
+
+  var cal = server.create('calendar');
+  server.createList('day', 16, { calendar: cal });
 
   /*
     Seed your development database using your factories.

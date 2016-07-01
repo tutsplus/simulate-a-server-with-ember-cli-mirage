@@ -11,6 +11,12 @@ export default function() {
   this.patch('/calendars/:id');
   this.del('/calendars/:id');
 
+  this.get('/days');
+  this.post('/days');
+  this.get('/days/:id');
+  this.patch('/days/:id');
+  this.del('/days/:id');
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
