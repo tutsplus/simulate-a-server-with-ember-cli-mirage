@@ -1,0 +1,8 @@
+{{#link-to "calendars" class='back btn'}} Back {{/link-to}}
+<h1> 
+{{model.name}}
+</h1>
+<div>
+<h2> {{month}} &mdash; {{model.count}} days </h2>
+</div>
+{{month-view days=model.days}}

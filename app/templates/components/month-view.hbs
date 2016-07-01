@@ -1,0 +1,22 @@
+<table>
+<thead>
+<tr>
+    <th> Sunday </th>
+    <th> Monday </th>
+    <th> Tuesday </th>
+    <th> Wednesday </th>
+    <th> Thursday </th>
+    <th> Friday </th>
+    <th> Saturday </th>
+</tr>
+</thead>
+<tbody>
+    {{#each weeks as |week|}}
+    <tr>
+        {{#each week as |day|}}
+            {{calendar-day day=day onClick=(action "test")}}
+        {{/each}}
+    </tr>
+    {{/each}}
+</tbody>
+</table>

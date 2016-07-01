@@ -1,0 +1,14 @@
+<h2> New Calendar </h2>
+
+<div class='form'>
+<form>
+    <p> <label for='name'> Name: </label></p>
+    <p>{{input value=model.name class='u-full-width' type='text' id='name'}} </p>
+
+    <p> <label for='notes'> Notes (optional): </label> </p>
+    <p> {{textarea value=model.notes class='u-full-width' id='notes'}} </p>
+
+    <p> <button class='btn' {{action "save"}}> Create </button>
+    <button class='btn' {{action "cancel"}}> Cancel </button> </p>
+</form>
+</div>

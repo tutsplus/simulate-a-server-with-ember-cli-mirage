@@ -1,0 +1,9 @@
+<div class='container'>
+{{#if session.isAuthenticated}}
+    <p>Logged in. </p>
+    <p> {{#link-to "calendars"}} View your calendars {{/link-to}} </p>
+    <p><a {{action "invalidateSession"}} class='btn'> Log Out</a></p>
+{{else}}
+    <p>{{#link-to "login"}} Log In {{/link-to}}</p>
+{{/if}}
+</div>
