@@ -5,6 +5,12 @@ export default function() {
     return { access_token: 'secret token!' };
   });
 
+  this.get('/calendars');
+  this.post('/calendars');
+  this.get('/calendars/:id');
+  this.patch('/calendars/:id');
+  this.del('/calendars/:id');
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
